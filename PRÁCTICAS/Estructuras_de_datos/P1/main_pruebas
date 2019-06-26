@@ -1,0 +1,172 @@
+    /*
+    
+    cout << "------------ Vectores ------------ " << endl;
+    myVector<int> prueba_v;
+
+    if(prueba_v.isEmpty())
+        cout << "el vector estÃ¡ vacÃ­o" << endl;
+
+    prueba_v.pushBack(5);
+    prueba_v.pushBack(10);
+    prueba_v.pushBack(15);
+
+    cout << "El nÃºmero de elementos es: " << prueba_v.size() << endl;
+
+    for(int i=0; i < prueba_v.size(); i++)
+        cout << prueba_v.get(i) << ' ';
+
+    cout << endl;
+
+    prueba_v.popBack();
+
+    for(int i=0; i < prueba_v.size(); i++)
+        cout << prueba_v.get(i) << ' ';
+
+    cout << endl;
+
+    prueba_v.resize(200);
+
+    cout << "New tam: " << prueba_v.reserved_size() << endl;
+
+    for(int i=0; i < prueba_v.size(); i++)
+        cout << prueba_v.get(i) << ' ';
+
+    cout << endl;
+
+    myVector<string> string_v;
+    string_v.pushBack("Hola");
+    string_v.pushBack("Hello");
+    for(int i=0; i < string_v.size(); i++){
+        cout << string_v.get(i) << ' ';
+    }
+    cout << endl;
+    cout << endl;
+    //-----------------------------------------------------------------------------------------------
+
+    cout << "------------ Nodos ------------" << endl;
+
+    myNode<int> *nodo_1 = new myNode<int>(1);
+    myNode<int> *nodo_2 = new myNode<int>(2);
+
+    nodo_1->set_next(nodo_2);
+
+    nodo_1->set_dato(3);
+    cout << nodo_1->get_dato() << endl;
+    cout << endl;
+
+
+    //-----------------------------------------------------------------------------------------------
+    cout << "------------ Listas ------------" << endl;
+
+    myList<string> lista;
+    cout << "Introduciendo con pushFront en la lista 2 elementos:" <<endl;
+    lista.pushFront("hola");
+    lista.pushFront("hello");
+
+    for(int i=0; i < lista.size(); i++){
+        cout << lista.get(i) << ' ';
+    }
+
+    cout << endl;
+    cout << "Introduciendo con insert en la lista 2 elementos: hola en la pos = 0 y hi en la pos = 2" <<endl;
+    lista.insert("hola",0);
+    lista.insert("hi",2);
+    for(int i=0; i < lista.size(); i++){
+        cout << lista.get(i) << ' ';
+    }
+
+    cout << endl;
+    cout << "Sacando con popFront en la lista:" <<endl;
+    lista.popFront();
+    for(int i=0; i < lista.size(); i++){
+        cout << lista.get(i) << ' ';
+    }
+    cout << endl;
+    cout << "Extrayendo nodo:" <<endl;
+    lista.extract(1);
+
+    for(int i=0; i < lista.size(); i++){
+        cout << lista.get(i) << ' ';
+    }
+    cout <<endl;
+    cout << endl;
+     //-----------------------------------------------------------------------------------------------
+    cout << endl << "------------ PILA ------------" <<endl;
+    myStack<int> pila;
+
+    if(pila.isEmpty())
+        cout << "La pila estÃ¡ vacÃ­a" << endl;
+
+    cout << "Vamos a introducir en la pila:" <<endl;
+    pila.push(1);
+    pila.push(2);
+    pila.push(3);
+
+    cout << "Vamos a ver el top de la pila:" <<endl;
+    cout << "Tope:" << pila.top() <<endl;
+    cout <<"Vamos a hacer un pop en la pila" <<endl;
+    pila.pop();
+    cout << "Comprobemos, el tope es:" << pila.top() <<endl;
+    cout << endl;
+    cout << endl;
+
+
+    //-----------------------------------------------------------------------------------------------
+    cout << endl << "------------ VECTOR CIRCULAR ------------" <<endl;
+
+    myRoundVector<int> v_;
+
+
+    if(v_.isEmpty())
+        cout << "El vector circular estÃ¡ vacÃ­o" << endl;
+
+    cout << "El nÃºmero de elementos es: " << v_.size() << endl;
+
+
+
+    //-----------------------------------------------------------------------------------------------
+
+    cout << "------------ Nodos Dobles ------------" << endl;
+    cout <<endl;
+
+    //-----------------------------------------------------------------------------------------------
+
+    cout << "------------ Listas Dobles ------------" << endl;
+
+    myDoubleList<int> lista_d;
+
+    cout << "Introduciendo en la lista:" <<endl;
+    //char c = 'a';
+    //myDoubleNode<char> *aux = new myDoubleNode<char>(c);
+    //lista_d.insert_head(aux);
+
+
+    lista_d.insert_head(1);
+    lista_d.insert_head(2);
+    lista_d.insert_tail(3);
+
+    lista_d.write(cout);
+
+    lista_d.extract_head();
+    lista_d.write(cout);
+
+    lista_d.extract_tail();
+    lista_d.write(cout);
+
+    //-----------------------------------------------------------------------------------------------
+
+    cout << "------------ Cola ------------" << endl;
+    myQueue<int> cola;
+
+    cola.isEmpty();
+    cola.push(1);
+    cola.push(2);
+    cola.push(3);
+    cola.write(cout);
+    cout<<endl;
+    cola.pop();
+    cola.write(cout);
+    cout<<endl;
+    cout << "El tamaÃ±o de la cola es: " << cola.size()<<endl;
+
+*/
